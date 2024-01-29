@@ -69,26 +69,26 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# configure sphinxcontrib.bibtex
-bibtex_bibfiles = ["bibliography.bib"]
+# # configure sphinxcontrib.bibtex
+# bibtex_bibfiles = ["bibliography.bib"]
 
 
-# Our own customisation
-# Our own customisation
-from custom import DIRECTIVES, cmake_glossary
+# # Our own customisation
+# # Our own customisation
+# from custom import DIRECTIVES, cmake_glossary
 
 
-# the epilog
-rst_epilog = f"""
-.. role:: red
-.. role:: blue
-.. _CMake: https://cmake.org/cmake/help/v3.19/
+# # the epilog
+# rst_epilog = f"""
+# .. role:: red
+# .. role:: blue
+# .. _CMake: https://cmake.org/cmake/help/v3.19/
 
-{cmake_glossary()}
-"""
+# {cmake_glossary()}
+# """
 
 
-def setup(app):
-    for obj in DIRECTIVES:
-        app.add_directive(obj.get_cssname(), obj)
-    app.add_css_file("overrides.css")
+# def setup(app):
+#     for obj in DIRECTIVES:
+#         app.add_directive(obj.get_cssname(), obj)
+#     app.add_css_file("overrides.css")
