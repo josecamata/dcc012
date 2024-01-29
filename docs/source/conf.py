@@ -69,8 +69,8 @@ html_theme = 'sphinx_rtd_theme'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-# # configure sphinxcontrib.bibtex
-# bibtex_bibfiles = ["bibliography.bib"]
+# configure sphinxcontrib.bibtex
+bibtex_bibfiles = ["bibliography.bib"]
 
 
 # # Our own customisation
